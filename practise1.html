@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+		<title>使用 JavaScript 的示例</title>
+		<script>
+		document.addEventListener("DOMContentLoaded",function(){
+			// 创建一个新的段落并添加至body底部
+			function createParagraph(){
+				let para = document.createElement('p');
+				para.textContent = 'You clicked me!'
+				document.body.appendChild(para)
+			}
+			let buttons = document.querySelectorAll('button')
+			for(let i = 0;i<buttons.length;i++){
+				buttons[i].addEventListener('click',createParagraph)
+			}
+		})
+		</script>
+	</head>
+  <body>
+		<button class="firstButton">第一个button</button>
+		<button class="secondButton">第二个button</button>
+		<button class="thirdButton">第三个button</button>
+  </body>
+</html>
