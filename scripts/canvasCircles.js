@@ -1,6 +1,7 @@
 const btn = document.querySelector('button');
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
+// 得到所使用的客户端的长宽
 let WIDTH = document.documentElement.clientWidth;
 let HEIGHT = document.documentElement.clientHeight;
 canvas.width = WIDTH;
